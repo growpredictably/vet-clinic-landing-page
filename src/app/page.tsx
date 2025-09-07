@@ -129,6 +129,17 @@ export default function VetClinicLanding() {
                   <span className="text-gray-700">Emergency Services</span>
                 </div>
               </div>
+              
+              {/* Hero Image for mobile/small screens */}
+              <div className="lg:hidden mb-8">
+                <Image
+                  src="/premium_photo-1661820997320-94d1f59e255d.avif"
+                  alt="Professional veterinary care"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-lg object-cover w-full h-64"
+                />
+              </div>
             </div>
             
             {/* Appointment Form */}
@@ -218,6 +229,40 @@ export default function VetClinicLanding() {
                   </div>
                 )}
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Clinic Images Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="relative">
+              <Image
+                src="/premium_photo-1661820997320-94d1f59e255d.avif"
+                alt="Modern veterinary clinic interior"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg object-cover w-full h-80"
+              />
+              <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 rounded-lg p-3">
+                <p className="text-sm font-semibold text-gray-900">Modern Facilities</p>
+                <p className="text-xs text-gray-600">State-of-the-art equipment</p>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                src="/premium_photo-1661915652986-fe818e1973f9.avif"
+                alt="Professional veterinary care"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg object-cover w-full h-80"
+              />
+              <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 rounded-lg p-3">
+                <p className="text-sm font-semibold text-gray-900">Expert Care</p>
+                <p className="text-xs text-gray-600">Experienced veterinarians</p>
+              </div>
             </div>
           </div>
         </div>
@@ -395,6 +440,46 @@ export default function VetClinicLanding() {
         </div>
       </section>
 
+      {/* Call to Action Section */}
+      <section className="py-20 bg-blue-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-blue-900 bg-opacity-90"></div>
+        <div className="relative max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+                Your Pet's Health is Our Priority
+              </h2>
+              <p className="text-xl text-blue-100 mb-8">
+                Don't wait until it's too late. Schedule a preventive care appointment today and give your pet the best chance at a long, healthy life.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button 
+                  onClick={() => scrollToSection('home')}
+                  className="bg-white text-blue-900 px-8 py-3 rounded-md font-semibold hover:bg-blue-50 transition-colors"
+                >
+                  Book Appointment
+                </button>
+                <a 
+                  href="tel:0720123123"
+                  className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-900 transition-colors text-center"
+                >
+                  Call Now
+                </a>
+              </div>
+            </div>
+            <div className="hidden lg:block">
+              <Image
+                src="/premium_photo-1661915652986-fe818e1973f9.avif"
+                alt="Caring for pets"
+                width={500}
+                height={400}
+                className="rounded-lg shadow-2xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -419,9 +504,13 @@ export default function VetClinicLanding() {
                 The facility is clean, modern, and the veterinarians are clearly experienced and caring."
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
-                  <span className="text-gray-600 font-semibold">MP</span>
-                </div>
+                <Image
+                  src="/istockphoto-2218833627-612x612.webp"
+                  alt="Maria Popescu"
+                  width={60}
+                  height={60}
+                  className="rounded-full mr-4"
+                />
                 <div>
                   <div className="font-semibold text-gray-900">Maria Popescu</div>
                   <div className="text-gray-600">Dog Owner</div>
@@ -440,9 +529,13 @@ export default function VetClinicLanding() {
                 the prices are fair, and they always take time to explain everything clearly. Highly recommended!"
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4 flex items-center justify-center">
-                  <span className="text-gray-600 font-semibold">AI</span>
-                </div>
+            <Image
+                  src="/istockphoto-488108896-612x612.webp"
+                  alt="Alexandru Ionescu"
+                  width={60}
+                  height={60}
+                  className="rounded-full mr-4"
+                />
                 <div>
                   <div className="font-semibold text-gray-900">Alexandru Ionescu</div>
                   <div className="text-gray-600">Cat Owner</div>
