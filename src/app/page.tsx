@@ -132,13 +132,12 @@ export default function VetClinicLanding() {
               
               {/* Hero Image for mobile/small screens */}
               <div className="lg:hidden mb-8">
-                <Image
-                  src="/premium_photo-1661820997320-94d1f59e255d.avif"
-                  alt="Professional veterinary care"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg object-cover w-full h-64"
-                />
+                <div className="w-full h-64 bg-blue-100 rounded-lg flex items-center justify-center">
+                  <div className="text-center">
+                    <Heart className="w-16 h-16 text-blue-600 mx-auto mb-4" />
+                    <p className="text-blue-600 font-semibold">Professional Veterinary Care</p>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -239,26 +238,24 @@ export default function VetClinicLanding() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="relative">
-              <Image
-                src="/premium_photo-1661820997320-94d1f59e255d.avif"
-                alt="Modern veterinary clinic interior"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg object-cover w-full h-80"
-              />
+              <div className="w-full h-80 bg-blue-100 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <Shield className="w-20 h-20 text-blue-600 mx-auto mb-4" />
+                  <p className="text-blue-600 font-semibold text-lg">Modern Facilities</p>
+                </div>
+              </div>
               <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 rounded-lg p-3">
                 <p className="text-sm font-semibold text-gray-900">Modern Facilities</p>
                 <p className="text-xs text-gray-600">State-of-the-art equipment</p>
               </div>
             </div>
             <div className="relative">
-              <Image
-                src="/premium_photo-1661915652986-fe818e1973f9.avif"
-                alt="Professional veterinary care"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg object-cover w-full h-80"
-              />
+              <div className="w-full h-80 bg-blue-100 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <Heart className="w-20 h-20 text-blue-600 mx-auto mb-4" />
+                  <p className="text-blue-600 font-semibold text-lg">Expert Care</p>
+                </div>
+              </div>
               <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 rounded-lg p-3">
                 <p className="text-sm font-semibold text-gray-900">Expert Care</p>
                 <p className="text-xs text-gray-600">Experienced veterinarians</p>
@@ -468,13 +465,12 @@ export default function VetClinicLanding() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <Image
-                src="/premium_photo-1661915652986-fe818e1973f9.avif"
-                alt="Caring for pets"
-                width={500}
-                height={400}
-                className="rounded-lg shadow-2xl object-cover"
-              />
+              <div className="w-full h-96 bg-blue-800 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <Heart className="w-24 h-24 text-blue-200 mx-auto mb-4" />
+                  <p className="text-blue-200 font-semibold text-lg">Caring for Your Pets</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -504,13 +500,9 @@ export default function VetClinicLanding() {
                 The facility is clean, modern, and the veterinarians are clearly experienced and caring.&rdquo;
               </p>
               <div className="flex items-center">
-                <Image
-                  src="/istockphoto-2218833627-612x612.webp"
-                  alt="Maria Popescu"
-                  width={60}
-                  height={60}
-                  className="rounded-full mr-4"
-                />
+                <div className="w-15 h-15 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-blue-600 font-bold text-lg">MP</span>
+                </div>
                 <div>
                   <div className="font-semibold text-gray-900">Maria Popescu</div>
                   <div className="text-gray-600">Dog Owner</div>
@@ -529,13 +521,9 @@ export default function VetClinicLanding() {
                 the prices are fair, and they always take time to explain everything clearly. Highly recommended!&rdquo;
               </p>
               <div className="flex items-center">
-                <Image
-                  src="/istockphoto-488108896-612x612.webp"
-                  alt="Alexandru Ionescu"
-                  width={60}
-                  height={60}
-                  className="rounded-full mr-4"
-                />
+                <div className="w-15 h-15 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-blue-600 font-bold text-lg">AI</span>
+                </div>
                 <div>
                   <div className="font-semibold text-gray-900">Alexandru Ionescu</div>
                   <div className="text-gray-600">Cat Owner</div>
