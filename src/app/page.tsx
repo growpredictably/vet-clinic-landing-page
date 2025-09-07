@@ -529,7 +529,7 @@ export default function VetClinicLanding() {
                 the prices are fair, and they always take time to explain everything clearly. Highly recommended!&rdquo;
               </p>
               <div className="flex items-center">
-            <Image
+                <Image
                   src="/istockphoto-488108896-612x612.webp"
                   alt="Alexandru Ionescu"
                   width={60}
